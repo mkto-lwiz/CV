@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>Lewis</title>
+    <style>
+        :root{
+            --bg : rgb(252, 246, 246);
+            --font :15.5px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial,sans-serif;
+        }
+        body{
+            font: var(--font);
+            margin: 0;
+            padding: 0;
+        }
+        .wholeshi{
+            background-color: var(--bg);
+        }
+        .cvbody{
+            max-width: 9.5in;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .profiles{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .profiles img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin-right: 16px;
+            
+
+        }
+        .content {
+            max-width: 9.5in;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            gap: 20px;
+
+        }
+
+        .content > div {
+            background: radial-gradient(600px 150px at 0% -10%, rgba(0, 100, 100, 0.1), transparent 50%), white;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 9px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid rgb(0, 0, 0);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .content > div:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .content > div h2 {
+            margin-top: 0;
+            color: rgb(40, 40, 40);
+            font-size: 1.3em;
+        }
+        .skills span{
+            background-color: #f3f3f3;
+            color: #3730a3;
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+
+        }
+        .skills span:hover{
+            background-color: black;
+            color: white;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wholeshi">
+        <div class="cvbody">
+            <div class="profiles">
+                <div class="imgico">
+                    <img src="potrait.png" alt="Lewis">
+                </div>
+                <div class="profiles_decs">
+                <h1 style="margin: 0;">Lewis</h1>
+                <p style="margin: 0;">Aspiring Software Engineer, Studying Business & Informatics</p>
+                <div class="contact">
+                    <strong>Location :</strong>
+                    <span>Medan, Indonesia</span><p> </p>
+                    <Strong>Email    :</Strong>
+                    <span>lewiskwokzz@gmail.com</span>
+                </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="Aboutme">
+                <section><h2>About me</h2>
+                <p>Digital Business student with a strong focus on software development. Experienced in full-stack web development, data structures, and Linux environments through self-directed learning and hands-on projects.
+Skilled in building and debugging applications, with a growing interest in backend systems and software quality. Currently seeking opportunities to apply technical skills in real-world development.
+                </p>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    <span>Basic fullstack development</span>
+                    <span>Git/Github</span>
+                    <span>Laravel</span>
+                    <span>Python</span>
+                    <span>Linux/Shell scripting</span>
+                    <span>Reading Comprehension</span>
+                    <span>Vibe Coding</span>
+                    <span>APIs</span>
+                </div>
+                </section>
+            </div>
+            <div class="workexp">
+                <section><h2>Work Experience</h2>
+                <ul>
+                    <li><strong>Staff Pembukuan & Auditor Internal <br> CV. Mandau Prima</strong>
+                    <p style="margin: 0%; color:#5e5e5e ;">Full time 2023 - Current</p>
+                    <p style="margin: 0%; color:#000000 ;">-Responsible for monthly business' financial statement such as P/L statement, Revenue & Expense summarization, Journals and Balance sheet</p>
+                    <p style="margin: 0%; color:#000000 ;">-Recapping Invoice</p>
+                    <p style="margin: 0%; color:#000000 ;">-Ensuring precision of financial statement</p>
+                    </li>
+
+                </ul>
+                </section>
+            </div>
+
+            <div class="Language">
+            <section>
+                <h2>Language</h2>
+                <ul>
+                    <li>Bahasa Indonesia (Native)</li>
+                    <li>English(Intermidiate B1/B2)</li>
+                </ul>              
+            </section>
+
+            </div>
+            <div class="Projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Annuity Calulator and Projection</strong> <span>(frontend only)</span></li>
+                    <p style="margin: 0%; color:#5e5e5e ;">Calculator for automating annuity calculation and projection plan for one of my university course</p>
+                    <p style="margin: 0%;">Project link :</p><a href="https://github.com/mkto-lwiz/Annuity_calc.git"><img src="github.png" alt="Project link" style="width: 80px; height: 50px; background: white; margin: 0%"></a>
+                    <li><strong>Python CSV Automation tools using pandas library</strong></li>
+                    <p style="margin: 0%; color:#5e5e5e ;">Personal Project for excel automation</p>
+                    <li><strong>FastAPI Pokemon team manager</strong></li>
+                    <p style="margin: 0%; color:#5e5e5e ;">Developed a web-based backend using FastAPI to manage user-defined Pokémon teams. Integrated external data from PokeAPI to retrieve Pokémon information.
+                         Implemented CRUD operations and structured data models to support multiple teams per user.</p>
+                </ul>
+            </div>
+            <div class="dummy" style="background-color: var(--bg); border: none; box-shadow: none; background: none;">
+            </div>
+            <div class="Edu">
+                <h2>Education</h2>
+                <ul>
+                    <li><Strong>Digital Business S1 IMAT(Institut Modern Arsitektur dan Teknologi)</Strong></li>
+                    <p style="margin: 0%; color:#5e5e5e ;">2024-2028</p>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <a href="/cv_lewis.pdf" download class="btn"><button style="color:#000000; padding: 10px 20px; font-size: 16px; margin: 20px;">Download PDF</button>
+</a>
+
+
+</body>
+</html>
+
+   
